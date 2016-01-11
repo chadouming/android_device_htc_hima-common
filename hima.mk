@@ -92,6 +92,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libcamera_shim
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
 # Compat symbols
 PRODUCT_PACKAGES += \
     libboringssl-compat \
