@@ -1,0 +1,7 @@
+#!/system/bin/sh
+
+echo "Calibrating right speaker"
+climax_hostSW --device=/dev/tfa9887 --loadDrc=/system/etc/tfa/playback.drc --loadPatch=/system/etc/tfa/tfa9895.patch --loadPreset=/system/etc/tfa/playback.preset --loadSpeaker=/system/etc/tfa/tfa9895.speaker --loadConfig=/system/etc/tfa/tfa9895.config --calibrate=once
+
+echo "Calibrating left speaker"
+climax_hostSW --device=/dev/tfa9887l --loadDrc=/system/etc/tfa/playback_l.drc --loadPatch=/system/etc/tfa/tfa9895.patch --loadPreset=/system/etc/tfa/playback_l.preset --loadSpeaker=/system/etc/tfa/tfa9895_l.speaker --loadConfig=/system/etc/tfa/tfa9895.config --calibrate=once
