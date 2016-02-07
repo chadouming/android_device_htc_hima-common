@@ -79,7 +79,6 @@ on post-fs-data
 
     # Create directory for camera
     mkdir /data/camera 0770 media camera
-
     mkdir /data/misc/camera 0770 camera camera
 
     # Create the directory for CnE
