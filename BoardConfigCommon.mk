@@ -40,7 +40,12 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno430
 
 TARGET_USES_64_BIT_BINDER := true
 
-TARGET_CPU_CORTEX_A53 := true
+# Build optimizations
+CLANG_O3 := true
+# STRICT_ALIASING := true
+# KRAIT_TUNINGS := true
+GRAPHITE_OPTS := true
+ENABLE_GCCONLY := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8994
